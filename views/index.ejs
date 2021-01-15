@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>HOME</title>
+    <style>
+        body{
+            background-color: #4AB;
+        }
+        #titulo{
+            background-color: aqua;
+            color: aliceblue;
+            text-shadow:  3px 4px black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="estilo">
+        <h1 id="titulo">Registro do banco de dados - simulação de pagamento</h1>  
+    <% for(var i=0;i<dados.length;i++){ %>   
+        <p>Nome:  <%= dados[i].nome  %>  </p>
+        <p>Mercadoria:  <%= dados[i].mercadoria  %>  </p>
+        <p>Valor:  <%= dados[i].valor  %>  </p>
+        <br><hr><br>
+        <%}%>
+    </div>            
+</body>
+</html>
